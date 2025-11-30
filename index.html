@@ -26,7 +26,8 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.7;
             color: var(--text-color);
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            /* CHANGED: Slightly Lighter Blue Gradient */
+            background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
             min-height: 100vh;
             padding: 40px 20px;
         }
@@ -124,14 +125,16 @@
         }
         
         .contact-box {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            /* CHANGED: Matching Lighter Blue Gradient */
+            background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
             color: white;
             border-radius: 16px;
             padding: 35px;
             margin-top: 50px;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 10px 30px rgba(75, 108, 183, 0.4);
         }
         
+        /* CHANGED: Ensure ALL text elements in contact box are white */
         .contact-box h2 {
             color: white;
             border-bottom: 2px solid rgba(255, 255, 255, 0.3);
@@ -143,14 +146,19 @@
             opacity: 0.95;
         }
         
+        .contact-box strong {
+            color: white;
+        }
+        
         .contact-box a {
-            color: #fff;
+            color: white;
             text-decoration: underline;
             font-weight: 600;
         }
         
         .contact-box a:hover {
             opacity: 0.8;
+            color: #e2e8f0;
         }
         
         .highlight-box {
@@ -216,7 +224,7 @@
 <div class="container">
     <div class="header-section">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Updated on November 10, 2025.</p>
+        <p class="last-updated">Updated on November 12, 2025.</p>
     </div>
 
     <h2>Introduction</h2>
