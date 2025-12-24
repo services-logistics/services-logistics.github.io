@@ -82,7 +82,7 @@
             font-size: 1.05rem;
         }
         
-        ul {
+        ul, ol {
             margin-bottom: 20px;
             padding-left: 30px;
         }
@@ -138,6 +138,10 @@
             margin-top: 0;
         }
         
+        .contact-box h3 {
+            color: white;
+        }
+        
         .contact-box p {
             color: white;
             opacity: 0.95;
@@ -156,6 +160,10 @@
         .contact-box a:hover {
             opacity: 0.8;
             color: #e2e8f0;
+        }
+        
+        .contact-box ul {
+            color: white;
         }
         
         .highlight-box {
@@ -221,24 +229,42 @@
 <div class="container">
     <div class="header-section">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Updated on November 12, 2025.</p>
+        <p class="last-updated">Last Updated: December 24, 2024</p>
     </div>
 
     <h2>Introduction</h2>
     <p>Simple Aussie Weather, an application developed by Logistics Oasis Limited ("we", "our", or "us"), is committed to protecting your privacy. This Privacy Policy explains how our mobile application collects, uses, and safeguards your information when you use Simple Aussie Weather (the "App").</p>
+    
+    <p><strong>Data Controller:</strong> Logistics Oasis Limited is the data controller responsible for your personal data processed through this App.</p>
+    
+    <p>This Privacy Policy complies with the General Data Protection Regulation (GDPR), UK GDPR, Australian Privacy Principles, and Google Play policies.</p>
 
     <h2>Information We Collect</h2>
-    <p>Simple Aussie Weather handles personal and sensitive user data (location) in accordance with the Google Play User Data Policy. </p>
+    <p>Simple Aussie Weather handles personal and sensitive user data (location) in accordance with the Google Play User Data Policy, GDPR, and UK GDPR requirements.</p>
 
-    <h3>Location Data</h3>
-    <p>We request access to your device's location to automatically detect your nearest Australian city and provide accurate local weather forecasts.</p>
+    <h3>Location Data (Precise Location)</h3>
+    <p>We request access to your device's <strong>precise location</strong> to automatically detect your nearest Australian city and provide accurate local weather forecasts.</p>
+    
+    <div class="highlight-box">
+        <p><strong>Legal Basis for Processing (GDPR/UK GDPR):</strong></p>
+        <p>We process your location data based on your <strong>explicit consent</strong> (Article 6(1)(a) GDPR). You provide this consent when you grant location permissions to the App. You have the right to withdraw this consent at any time.</p>
+    </div>
 
     <h3>How We Use Location Data:</h3>
     <ul>
         <li>Location data we collect through this app is only used to determine your nearest city from our pre-defined list of Australian locations.</li>
         <li>The location is processed locally on your device.</li>
+        <li>We do not store, transmit, or share your precise location data with third parties.</li>
         <li>We do not track your location movements or history.</li>
-		<li>Third-party advertising partners (AdMob) may use your IP address to find an approximate location as described in their policies. Though precise location information is not provided.</li>
+        <li>Location data is not used for any purpose other than determining your nearest Australian city for weather display.</li>
+        <li>Third-party advertising partners (AdMob) do NOT receive your precise location data from us. However, they may derive approximate location from your IP address as described in their policies.</li>
+    </ul>
+
+    <h3>Other Data Collected:</h3>
+    <ul>
+        <li><strong>Device Information:</strong> Device model, operating system version (collected automatically for app functionality and crash reporting).</li>
+        <li><strong>App Usage Data:</strong> Interactions with the app, selected cities, crash logs (processed locally, not linked to your identity).</li>
+        <li><strong>IP Address:</strong> May be collected by third-party services (AdMob) for ad delivery and approximate location determination.</li>
     </ul>
 
     <h3>Your Control:</h3>
@@ -249,75 +275,173 @@
         <li>You can revoke location permissions through your device's settings.</li>
     </ul>
 
-    <h2>Third-Party Services</h2>
-    <p>The App integrates third-party SDKs (Google AdMob, React Native libraries) that may process limited, non-personal data necessary for good functionality and analytics.</p>
+    <h2>How We Use Your Information</h2>
+    <p>We use the information we collect for the following purposes:</p>
+    <ul>
+        <li><strong>Location Data:</strong> To determine your nearest Australian city and display relevant local weather</li>
+        <li><strong>Device Information:</strong> To ensure the app functions properly on your device and to diagnose technical issues</li>
+        <li><strong>App Usage Data:</strong> To improve app performance and user experience</li>
+    </ul>
+    <p><strong>We do NOT use your data for:</strong></p>
+    <ul>
+        <li>Profiling or behavioral analysis</li>
+        <li>Selling or renting to third parties</li>
+        <li>Marketing purposes (except serving ads through AdMob as described below)</li>
+    </ul>
 
-    <h3>Google AdMob</h3>
-    <p>Our App displays advertisements through Google AdMob. We have configured AdMob to request non-personalised ads only. Google AdMob may collect device information for the purpose of ad-related analytics and serving ads.</p>
+    <h2>Data Sharing and Disclosure</h2>
+    <p>We do not sell, rent, or trade your personal information. We only share data in the following limited circumstances:</p>
+    <ul>
+        <li><strong>Google AdMob:</strong> For advertising purposes as described in the "Third-Party Services" section below</li>
+        <li><strong>Legal Requirements:</strong> If required by law, regulation, legal process, or government request</li>
+        <li><strong>Safety and Security:</strong> To protect the rights, property, or safety of our users or others</li>
+    </ul>
+    <p><strong>We do NOT share your precise location data with any third parties.</strong></p>
+
+    <h2>Third-Party Services</h2>
+    <p>The App integrates third-party SDKs and services that may process limited data. We ensure all third-party processors comply with GDPR and UK GDPR requirements where applicable.</p>
+
+    <h3>Google AdMob (Advertising)</h3>
+    <p>Our App displays advertisements through Google AdMob. We have configured AdMob to show <strong>non-personalised ads by default</strong>, but EU/UK users are presented with a consent dialog that allows them to choose between personalised or non-personalised ads.</p>
+    
+    <div class="highlight-box">
+        <p><strong>Important for EU/UK Users:</strong></p>
+        <p>When you first open the App in the EU/UK, you will see Google's Consent Management Platform (CMP) asking for your consent to use cookies and process data for personalised advertising. You can:</p>
+        <ul style="margin-bottom: 0;">
+            <li>Accept personalised ads</li>
+            <li>Choose non-personalised ads</li>
+            <li>Manage your preferences in detail</li>
+            <li>Change your choices at any time via the "Privacy Settings / Revoke Consent" button in the app</li>
+        </ul>
+    </div>
     
     <div class="highlight-box">
         <p><strong>Information that AdMob collects may include:</strong></p>
         <ul style="margin-bottom: 0;">
-            <li>Device ID.</li>
-            <li>Device information (the model and/or operating system).</li>
-            <li>Ad interaction data.</li>
-            <li>Basic location information (at the country/regional level).</li>
-            <li>IP address.</li>
+            <li>Device ID (Google Advertising ID)</li>
+            <li>Device information (the model and/or operating system)</li>
+            <li>Ad interaction data</li>
+            <li>Basic location information (at the country/regional level derived from IP address)</li>
+            <li>IP address</li>
         </ul>
     </div>
-   
 
     <p>For more information about Google's advertising practices, please visit:</p>
     <ul>
         <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
         <li><a href="https://support.google.com/admob/answer/6128543" target="_blank">Google AdMob Help</a></li>
+        <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank">How Google uses data when you use our partners' sites or apps</a></li>
     </ul>
 
     <h3>React Native and Associated Libraries</h3>
     <p>Our App uses these React Native and related libraries for the weather app's functionality:</p>
     <ul>
-        <li><code>geolocation</code> (for location detection)</li>
-        <li><code>google-mobile-ads</code> (for advertisements)</li>
-        <li><code>svg</code> (for graphics)</li>
+        <li><code>expo-location</code> (for location detection)</li>
+        <li><code>react-native-google-mobile-ads</code> (for advertisements)</li>
+        <li><code>react-native-svg</code> (for graphics)</li>
+        <li><code>react-native-google-play-integrity</code> (for app security verification)</li>
     </ul>
     <p>These libraries do not transmit personal information to external servers beyond what is documented in this privacy policy.</p>
 
     <h2>Data Storage and Security</h2>
     <ul>
         <li>The Application does not maintain any user accounts or profiles.</li>
-		<li>No personal information is transmitted to our servers.</li>
+        <li>No personal information is transmitted to our servers.</li>
         <li>Weather data is temporarily cached on your device for display purposes only.</li>
-
     </ul>
 
+    <h2>Security Measures</h2>
+    <p>We implement appropriate technical and organizational measures to protect your personal data:</p>
+    <ul>
+        <li>Location data is processed locally and not transmitted to our servers</li>
+        <li>All communications with our weather API use HTTPS encryption</li>
+        <li>We use Google Play Integrity API to verify app authenticity and prevent tampering</li>
+        <li>Regular security reviews and updates</li>
+        <li>No user accounts or authentication systems that could be compromised</li>
+    </ul>
+    <p>However, no method of transmission over the internet is 100% secure. While we strive to protect your data, we cannot guarantee absolute security.</p>
+
     <h2>Minors</h2>
-    <p>Our App does not knowingly collect personal information from children under 13 years of age. The App is designed for general audiences and does not contain age-restricted content.</p>
+    <p>Our App does not knowingly collect personal information from children under 13 years of age (or under 16 in the EU/UK). The App is designed for general audiences and does not contain age-restricted content.</p>
+    <p>If we become aware that we have collected personal information from a child under the applicable age without proper parental consent, we will take steps to delete that information immediately.</p>
 
     <h2>Your Rights and Choices</h2>
-    <p>You, as the user of this app, have the right to:</p>
+    
+    <h3>For All Users:</h3>
     <ul>
         <li>Deny location permissions (the Application will still work with manual city selection).</li>
         <li>Revoke location permissions at any time through your device settings.</li>
-        <li>Uninstall the App to remove all of the locally cached data.</li>
+        <li>Uninstall the App to remove all locally cached data.</li>
         <li>Contact us with any privacy concerns or questions.</li>
     </ul>
+    
+    <h3>Additional Rights for EU/UK Users (GDPR/UK GDPR):</h3>
+    <p>Under the GDPR and UK GDPR, you have the following rights regarding your personal data:</p>
+    <ul>
+        <li><strong>Right of Access:</strong> You can request confirmation of whether we process your personal data and obtain a copy of it.</li>
+        <li><strong>Right to Rectification:</strong> You can request correction of inaccurate personal data.</li>
+        <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> You can request deletion of your personal data in certain circumstances.</li>
+        <li><strong>Right to Restrict Processing:</strong> You can request limitation of processing in certain circumstances.</li>
+        <li><strong>Right to Data Portability:</strong> You can request transfer of your data to another service provider where technically feasible.</li>
+        <li><strong>Right to Object:</strong> You can object to processing of your personal data based on legitimate interests.</li>
+        <li><strong>Right to Withdraw Consent:</strong> You can withdraw your consent to location tracking at any time through device settings or by uninstalling the App.</li>
+        <li><strong>Right to Lodge a Complaint:</strong> You can lodge a complaint with your local data protection authority if you believe your rights have been violated.</li>
+    </ul>
+    
+    <p><strong>To exercise these rights, please contact us at:</strong> <a href="mailto:services@logisticsoasis.com">services@logisticsoasis.com</a></p>
+    <p>We will respond to your request within 30 days (or as required by applicable law).</p>
 
     <h2>Opting Out of Personalised Ads</h2>
-    <p>While our App requests non-personalised ads by default, you can more directly control ad personalisation through your device's settings:</p>
-    <p><strong>For Android users:</strong> Go to <em>Settings > Google > Ads > Opt out of Ads Personalisation.</em></p>
+    <p>You have several options to control ad personalization:</p>
+    <ul>
+        <li><strong>In-App Settings (EU/UK):</strong> Use the "Privacy Settings / Revoke Consent" button in the app footer to change your ad preferences.</li>
+        <li><strong>Android Device Settings:</strong> Go to <em>Settings > Google > Ads > Opt out of Ads Personalisation.</em></li>
+        <li><strong>Reset Advertising ID:</strong> Go to <em>Settings > Google > Ads > Reset advertising ID.</em></li>
+    </ul>
+
+    <h2>Cookies and Tracking Technologies</h2>
+    <p>Our App does not directly use cookies. However, third-party services integrated into the App may use tracking technologies:</p>
+    <ul>
+        <li><strong>Google AdMob:</strong> Uses advertising identifiers (such as Google Advertising ID on Android) and may use cookies/similar technologies for ad delivery and measurement.</li>
+        <li><strong>Purpose:</strong> Ad frequency capping, aggregated ad reporting, and fraud prevention.</li>
+        <li><strong>Your Control:</strong> You can reset your advertising ID or limit ad tracking through your device settings. EU/UK users can manage preferences through the in-app Privacy Settings.</li>
+    </ul>
+
+    <h2>Automated Decision-Making</h2>
+    <p>We do not use automated decision-making or profiling that produces legal or similarly significant effects concerning you.</p>
 
     <h2>Data Retention</h2>
     <ul>
-        <li>Location data is not retained (it is used only momentarily to determine your nearest city).</li>
-        <li>Weather data is cached on your device temporarily and automatically refreshed when you use the application.</li>
-        <li>No historical data is stored.</li>
+        <li><strong>Location data:</strong> Not retained. Used only momentarily to determine your nearest city, then immediately discarded.</li>
+        <li><strong>Weather data:</strong> Cached temporarily on your device (up to 10 minutes) for performance, then automatically refreshed.</li>
+        <li><strong>App preferences:</strong> Last selected city stored locally on your device. Deleted when you uninstall the App.</li>
+        <li><strong>Ad-related data:</strong> Managed by Google AdMob according to their retention policies (see <a href="https://policies.google.com/technologies/partner-sites" target="_blank">Google's Data Retention</a>).</li>
+        <li>No historical data or usage patterns are stored by us.</li>
     </ul>
+    
+    <h3>Data Deletion:</h3>
+    <p>To delete all data associated with the App:</p>
+    <ol>
+        <li>Uninstall the App from your device (removes all locally stored data).</li>
+        <li>Revoke ad personalization consent through Google's settings or the in-app Privacy Settings option.</li>
+        <li>Contact us at <a href="mailto:services@logisticsoasis.com">services@logisticsoasis.com</a> if you need assistance.</li>
+    </ol>
 
     <h2>Changes to This Privacy Policy</h2>
     <p>We may update this Privacy Policy from time to time. Any changes will be reflected by updating the "Last Updated" date at the top of this policy. We encourage you to review this Privacy Policy periodically for any updates.</p>
+    <p>For material changes that significantly impact your rights, we will provide notice through the App or through another means.</p>
 
     <h2>International Data Transfer Disclosures</h2>
-    <p>Weather data requests (i.e., for the selected city) may be transmitted internationally. Google AdMob services may also involve international data transfers as is described in Google's privacy policies. </p> 
+    <p>Weather data requests (i.e., for the selected city) may be transmitted to our servers located in Australia and processed through Google Cloud Platform (Australia region).</p>
+    
+    <h3>For EU/UK Users:</h3>
+    <p>When your data is transferred outside the EU/UK, we ensure appropriate safeguards are in place:</p>
+    <ul>
+        <li><strong>Google Services:</strong> Google LLC (AdMob) participates in the EU-U.S. Data Privacy Framework and adheres to the Framework Principles. See <a href="https://policies.google.com/privacy/frameworks" target="_blank">Google's Data Privacy Framework certification</a>.</li>
+        <li><strong>Standard Contractual Clauses:</strong> Where applicable, we rely on the EU Standard Contractual Clauses approved by the European Commission.</li>
+        <li><strong>Adequacy Decisions:</strong> Data transfers to Australia may rely on adequacy decisions being made where this is applicable alongside other data safeguards.</li>
+    </ul>
+    <p>You have the right to request more information about the safeguards we use for international data transfers by contacting us via <a href="mailto:services@logisticsoasis.com">services@logisticsoasis.com</a>.</p>
 
     <h2>Australian Privacy Principles Compliance</h2>
     <p>We are committed to complying with the Australian Privacy Principles (APPs) under the Privacy Act 1988. This includes:</p>
@@ -332,13 +456,21 @@
     <p>We process your location data based on your consent, which you provide when granting location permissions. You can withdraw this consent at any time by revoking the relevant location permissions on your Android device's settings page.</p>
 
     <div class="contact-box">
-        <h2>Contact Us</h2>
-        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:</p>
+        <h2>Contact Us & Data Protection Officer Info</h2>
+        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, or wish to exercise your rights under GDPR/UK GDPR, please contact us at:</p>
         <p>
             <strong>Email:</strong> <a href="mailto:services@logisticsoasis.com">services@logisticsoasis.com</a><br>
             <strong>App Name:</strong> Simple Aussie Weather<br>
-            <strong>Developer:</strong> Logistics Oasis Limited
+            <strong>Developer:</strong> Logistics Oasis Limited<br>
+            <strong>Data Controller:</strong> Logistics Oasis Limited
         </p>
+        
+        <h3 style="color: white; font-size: 1.2rem; margin-top: 25px; border: none; padding: 0;">For EU/UK Users - Supervisory Authorities:</h3>
+        <p>If you are located in the EU or UK and believe we have not adequately addressed your concerns, you have the right to lodge a complaint with your local data protection authority:</p>
+        <ul style="margin-top: 10px;">
+            <li><strong>EU:</strong> Find your authority at <a href="https://edpb.europa.eu/about-edpb/board/members_en" target="_blank">European Data Protection Board.</a></li>
+            <li><strong>UK:</strong> <a href="https://ico.org.uk/" target="_blank">Information Commissioner's Office (ICO).</a></li>
+        </ul>
     </div>
 
     <div class="acknowledgment">
